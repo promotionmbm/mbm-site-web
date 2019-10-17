@@ -1,0 +1,110 @@
+-
+	var
+		htmlClass = "wide wow-animation",
+		fonts = "//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7CLato%7CKalam:300,400,700",
+		subscribeFormCounter = 0,
+		logo = {
+			default: 'logo-default-210x88.png',
+			inverse: 'logo-inverse-212x88.png',
+			name: 'Sofa'
+		},
+		links = {
+			about: 'about-us.html',
+			post: 'blog-post.html',
+			shop: 'grid-shop.html',
+			product: 'single-product.html',
+			service: '#',
+			team: '#',
+			getTemplate:'#get-template'
+		},
+		colors = {
+			primary: '#b6c062',
+			secondary: '#b6c062'
+		},
+		menu = [
+			{
+				title: 'Home',
+				category: 'home', 
+				link: 'index.html'
+			},
+			{
+				title: 'Pages',
+				category: 'pages',
+				link: '#',
+				dropdown: [
+					{ title: 'About Us' },
+					{ title: 'What We Offer' },
+					{ title: 'Our Team' },
+					{ title: 'Testimonials' }
+				]
+			},
+			{
+				title: 'Blog',
+				category: 'blog',
+				link: 'grid-blog.html',
+				dropdown: [
+					{ title: 'Grid Blog' },
+					{ title: 'Blog List' },
+					{ title: 'Blog Post' }
+				]
+			},
+			{
+				title: 'Gallery',
+				category: 'gallery',
+				link: 'grid-gallery.html',
+				dropdown: [
+					{ title: 'Grid Gallery' },
+					{ title: 'Grid Fullwidth Gallery' },
+					{ title: 'Masonry Gallery' }
+				]
+			},
+			{
+				title: 'Elements',
+				category: 'elements',
+				link: '#',
+				megamenu: [
+					{
+						title: 'Elements',
+						icon: 'mdi mdi-apps',
+						listClass: 'rd-megamenu-list-2',
+						list: [
+							{ title: 'Typography' },
+							{ title: 'Icon lists' },
+							{ title: 'Progress bars' },
+							{ title: 'Calls to action' },
+							{ title: 'Tabs & accordions', link: 'tabs-and-accordions.html' },
+							{ title: 'Buttons' },
+							{ title: 'Tables' },
+							{ title: 'Forms' },
+							{ title: 'Counters' },
+							{ title: 'Grid system' }
+						]
+					},
+					{
+						title: 'Additional pages',
+						icon: 'mdi mdi-layers',
+						itemClass: 'flex-grow-1 flex-shrink-0',
+						list: [
+							{ title: '404 Page' },
+							{ title: 'Coming Soon' },
+							{ title: 'Contact Us' },
+							{ title: 'Privacy Policy' },
+							{ title: 'Search Results' }
+
+						]
+					}
+				]
+			},
+			{
+				title: 'Shop',
+				category: 'shop',
+				link: links.shop,
+				dropdown: [
+					{ title: 'Grid Shop' },
+					{ title: 'Shop List' },
+					{ title: 'Single Product' },
+					{ title: 'Cart Page' },
+					{ title: 'Checkout' }
+				]
+			}
+		];

@@ -1,0 +1,98 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-product
+include ../components/_ui-pagination
+
+block variables
+	- var activeCategory = 'shop'
+	- var pageName = 'Grid Shop'
+
+block page 
+	// Page Header
+	+header-classic: include ../includes/_aside-navbar-classic
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-blog-2'
+	})
+
+	// Section Shop
+	section.section.section-xxl.bg-default.text-md-left
+		.container: .row.row-50
+			.col-lg-4.col-xl-3: include ../includes/_aside-product
+			.col-lg-8.col-xl-9
+				.product-top-panel.group-md
+					p.product-top-panel-title Showing 1–12 of 28 results
+					div: .group-sm.group-middle
+						.product-top-panel-sorting
+							select(data-minimum-results-for-search="Infinity")
+								option(value="1") Sort by newness
+								option(value="2") Sort by popularity
+								option(value="3") Sort by alphabet
+
+						.product-view-toggle
+							a.mdi.mdi-apps.product-view-link.product-view-grid.active(href=links.shop)
+							a.mdi.mdi-format-list-bulleted.product-view-link.product-view-list(href='shop-list.html')
+
+				.row.row-30.row-lg-50
+					.col-sm-6.col-md-4.col-lg-6.col-xl-4
+						+product({
+							img: 'product-1-160x155',
+							title: 'Club Chair',
+							price: '23',
+							priceOld: '30'
+						})
+					.col-sm-6.col-md-4.col-lg-6.col-xl-4
+						+product({
+							img: 'product-2-132x173',
+							title: 'pendant lamp',
+							price: '13',
+							new: true
+						})
+					.col-sm-6.col-md-4.col-lg-6.col-xl-4
+						+product({
+							img: 'product-3-140x168',
+							title: 'Dark grey club chair',
+							price: '17'
+						})
+					.col-sm-6.col-md-4.col-lg-6.col-xl-4
+						+product({
+							img: 'product-4-132x173',
+							title: 'Orange Stacking chair',
+							price: '11',
+							new: true
+						})
+					.col-sm-6.col-md-4.col-lg-6.col-xl-4
+						+product({
+							img: 'product-5-65x202',
+							title: 'Floor lamp',
+							price: '15'
+						})
+					.col-sm-6.col-md-4.col-lg-6.col-xl-4
+						+product({
+							img: 'product-6-128x179',
+							title: 'White Chair',
+							price: '22',
+							priceOld: '32'
+						})
+					.col-sm-6.col-md-4.col-lg-6.col-xl-4
+						+product({
+							img: 'product-7-132x168',
+							title: 'Table Lamp',
+							price: '14',
+							new: true
+						})
+					.col-sm-6.col-md-4.col-lg-6.col-xl-4
+						+product({
+							img: 'product-8-129x172',
+							title: 'Garden table',
+							price: '10'
+						})
+
+				.pagination-wrap: +pagination-bootstrap(null, 1, 3)
+	='\n'
+
+	// Page Footer
+	+footer-classic

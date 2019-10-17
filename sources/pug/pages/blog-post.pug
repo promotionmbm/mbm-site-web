@@ -1,0 +1,134 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-posts
+include ../components/_ui-quote
+include ../components/_ui-box-comment
+
+block variables
+	- var activeCategory = 'blog'
+	- var pageName = 'Blog Post'
+
+block page 
+	// Page Header
+	+header-classic: include ../includes/_aside-navbar-classic
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-blog'
+	})
+
+	// Section Shop
+	section.section.section-xl.bg-default.text-md-left
+		.container: .row.row-50.row-md-60
+			.col-lg-8.col-xl-9: .inset-xl-right-100
+				.row.row-50.row-md-60.row-lg-80
+					.col-12
+						article.post.post-modern.box-xxl
+							.post-modern-panel
+								div: a.post-modern-tag( href='#' ) News
+								div: time.post-modern-time(datetime='2019-09-08') August 9, 2019
+							h3.post-modern-title Top 20 Interior Home Decor Trends of 2019
+							.post-modern-figure: +jpg('post-7-800x394')
+							p.post-modern-text Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+							p.post-modern-text At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est
+						+quote-classic({
+							mod: 'quote-classic-2',
+							text: 'With a new year come new decorating patterns, stylish, timeless pieces, and fresh takes on old styles.'
+						})
+
+						p Phasellus sit amet consequat ante. Nulla mattis magna at mi ultrices vulputate. Phasellus ac diam sit amet justo tincidunt lacinia eu nec magna. Curabitur dapibus pellentesque ex, quis mattis sapien. Curabitur orci lorem, porttitor sed enim non, varius volutpat felis. Vestibulum euismod ex quis ultricies rhoncus. Phasellus eget egestas ipsum.
+
+						.single-post-bottom-panel
+							.group-sm.group-justify
+								div: .group-sm.group-tags
+									a.link-tag( href='#' ) News
+									a.link-tag( href='#' ) Interior
+									a.link-tag( href='#' ) Tips
+								div: .group-xs.group-middle
+									span.list-social-title Share
+									div: +widget-list([], '', 'list-social list-inline-sm')
+
+					.col-12
+						h6.single-post-title Related Posts
+						.row.row-30
+							.col-sm-6
+								+post-classic({
+									img: 'post-1-370x239',
+									time: {
+										datetime: '2019-09-08',
+										dateText: 'August 9, 2019'
+									},
+									title: 'How to Choose Furniture for Your Home',
+									text: 'Est velox nuptia, cesaris. Est dexter turpis, cesaris. Cum nixus persuadere, omnes fluctuies promissio flavum'
+								})
+							.col-sm-6
+								+post-classic({
+									img: 'post-2-370x239',
+									time: {
+										datetime: '2019-09-08',
+										dateText: 'August 9, 2019'
+									},
+									title: 'LED Lighting and Its Benefits for Homeowners',
+									text: 'Sensorems peregrinatione in rugensis civitas! Ubi est bi-color byssus? Velox, teres ollas recte aperto de castus'
+								})
+
+					.col-12
+						h6.single-post-title 3 Comments
+						+box-comment({
+							unit: 'unit-spacing-md',
+							img: 'user-1-119x119',
+							author: 'Jane Doe',
+							text: 'Lorem ipsum dolor sit amet, has mutat labores nostrum ei. Duo te blandit erroribus, ut sea ipsum nonumy, mel no ignota accusamus gloriatur. Id has habeo regione, explicari hendrerit reprimique cum te.',
+							time: {
+								datetime: '2019-08-30',
+								dateText: 'Aug 30, 2019'
+							}
+						})
+
+							+box-comment({
+								unit: 'unit-spacing-md',
+								img: 'user-2-119x119',
+								author: 'Jessica Brown',
+								text: 'Lorem ipsum dolor sit amet, has mutat labores nostrum ei. Duo te blandit erroribus, ut sea ipsum nonumy, mel no ignota accusamus',
+								time: {
+									datetime: '2019-08-30',
+									dateText: 'Aug 30, 2019'
+								}
+							})
+
+						+box-comment({
+							unit: 'unit-spacing-md',
+							img: 'user-3-119x119',
+							author: 'Nick Stevens',
+							text: 'Lorem ipsum dolor sit amet, has mutat labores nostrum ei. Duo te blandit erroribus, ut sea ipsum nonumy, mel no ignota accusamus gloriatur. Id has habeo regione, explicari hendrerit reprimique cum te.',
+							time: {
+								datetime: '2019-08-30',
+								dateText: 'Aug 30, 2019'
+							}
+						})
+
+					.col-12
+						h6.single-post-title Leave a comment
+						form.rd-form.rd-mailform(data-form-output='form-output-global', data-form-type='contact', method='post', action='bat/rd-mailform.php')
+							.row.row-20.row-md-30
+								.col-sm-6: .form-wrap
+									input#contact-first-name-2.form-input(type='text' name='name' data-constraints='@Required')
+									label.form-label(for='contact-first-name-2') First Name
+
+								.col-sm-6: .form-wrap
+									input#contact-last-name-2.form-input(type='text' name='name' data-constraints='@Required')
+									label.form-label(for='contact-last-name-2') Last Name
+
+								.col-12: .form-wrap
+									label.form-label(for='contact-message-2') Message
+									textarea#contact-message-2.form-input.textarea-lg(name='phone' data-constraints='@Required')
+
+							button.button.button-lg.button-secondary.button-zakaria(type='submit') Submit
+
+			.col-lg-4.col-xl-3: include ../includes/_aside-blog
+	='\n'
+
+	// Page Footer
+	+footer-classic

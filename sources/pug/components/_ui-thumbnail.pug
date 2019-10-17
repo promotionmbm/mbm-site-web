@@ -1,0 +1,41 @@
+mixin thumbnail-classic(obj)
+	// Thumbnail Classic
+	article.thumbnail-classic( class= obj.mod )&attributes(attributes)
+		if( obj.category )
+			.thumbnail-classic-figure: +jpg( obj.img )
+		else
+			a.thumbnail-classic-figure(href='images/' + obj.imgOriginal + '.jpg' data-lightgallery='item'): +jpg( obj.img )
+
+		.thumbnail-classic-caption: div
+			h5.thumbnail-classic-title: a(href=links.product)=obj.title
+			if( obj.category )
+				.thumbnail-classic-price=obj.category
+				.thumbnail-classic-button-wrap
+					.thumbnail-classic-button: a.button.button-gray-6.button-zakaria.fl-bigmug-line-search74(href='images/' + obj.imgOriginal + '.jpg' data-lightgallery='item'): +jpg( obj.img )
+			else if( obj.tag )
+				.thumbnail-classic-tag= obj.tag
+
+mixin thumbnail-portfolio(obj)
+	// Thumbnail Classic
+	article.thumbnail-classic( class= obj.mod )&attributes(attributes)
+		if( obj.category )
+			.thumbnail-classic-figure: +jpg( obj.img )
+		else
+			a.thumbnail-classic-figure(href='images/' + obj.imgOriginal + '.jpg' data-lightgallery='item'): +jpg( obj.img )
+
+		.thumbnail-classic-caption: div
+			h5.thumbnail-classic-title: a(href=links.product)=obj.title
+			if( obj.category )
+				.thumbnail-classic-price=obj.category
+				.thumbnail-classic-button-wrap
+					.thumbnail-classic-button: a.button.button-white.button-zakaria.fl-bigmug-line-search74(href='images/' + obj.imgOriginal + '.jpg' data-lightgallery='item'): +jpg( obj.img )
+			else if( obj.tag )
+				.thumbnail-classic-tag= obj.tag
+
+
+mixin thumbnail-modern(obj)
+	// Thumbnail Classic
+	article.thumbnail-modern( class= obj.mod )&attributes(attributes)
+		a.thumbnail-modern-figure(href='images/' + obj.imgOriginal + '.jpg' data-lightgallery='item'): +jpg( obj.img )
+		.thumbnail-modern-caption: div
+			h4.thumbnail-modern-title: a(href=links.product)=obj.title

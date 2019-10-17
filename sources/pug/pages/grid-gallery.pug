@@ -1,0 +1,81 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-thumbnail
+
+block variables
+	- var activeCategory = 'gallery'
+	- var pageName = 'Grid Gallery'
+
+block page  
+	// Page Header
+	+header-classic: include ../includes/_aside-navbar-classic
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-blog-2'
+	})
+
+	// Grid Gallery
+	section.section.section-xl.bg-default
+		.container.isotope-wrap
+			.isotope-filters
+				//- Isotope Filters
+				button.isotope-filters-toggle.button.button-sm.button-icon.button-icon-right.button-default-outline(data-custom-toggle='.isotope-filters-list', data-custom-toggle-hide-on-blur='true' data-custom-toggle-disable-on-blur='true')
+					span.icon.mdi.mdi-chevron-down
+					| Filter
+
+				.isotope-filters-list-wrap
+					ul.isotope-filters-list
+						li: a.active(href='#', data-isotope-filter='*') View all
+						li: a(href='#', data-isotope-filter='Type 1') furniture
+						li: a(href='#', data-isotope-filter='Type 2') Decor
+
+			.row.row-30.isotope(data-lightgallery='group')
+				.col-sm-6.col-lg-4.isotope-item(data-filter='Type 1')
+					+thumbnail-classic({
+						img: 'grid-gallery-1-370x315',
+						imgOriginal: 'grid-gallery-1-1200x800-original',
+						title: 'Q-Biz Coworking',
+						category: 'Furniture'
+					})
+				.col-sm-6.col-lg-4.isotope-item(data-filter='Type 2')
+					+thumbnail-classic({
+						img: 'grid-gallery-2-370x315',
+						imgOriginal: 'grid-gallery-2-1200x800-original',
+						title: 'New York Public Library',
+						category: 'Decor'
+					})
+				.col-sm-6.col-lg-4.isotope-item(data-filter='Type 1')
+					+thumbnail-classic({
+						img: 'grid-gallery-3-370x315',
+						imgOriginal: 'grid-gallery-3-1200x800-original',
+						title: 'Flash Cafe',
+						category: 'Furniture'
+					})
+				.col-sm-6.col-lg-4.isotope-item(data-filter='Type 2')
+					+thumbnail-classic({
+						img: 'grid-gallery-4-370x315',
+						imgOriginal: 'grid-gallery-4-1200x800-original',
+						title: 'u-Style Fashion House',
+						category: 'Decor'
+					})
+				.col-sm-6.col-lg-4.isotope-item(data-filter='Type 2')
+					+thumbnail-classic({
+						img: 'grid-gallery-5-370x315',
+						imgOriginal: 'grid-gallery-5-1200x800-original',
+						title: 'Quadro hotel',
+						category: 'Decor'
+					})
+				.col-sm-6.col-lg-4.isotope-item(data-filter='Type 1')
+					+thumbnail-classic({
+						img: 'grid-gallery-6-370x315',
+						imgOriginal: 'grid-gallery-6-1200x800-original',
+						title: 'Sunshine Restaurant',
+						category: 'Furniture'
+					})
+	='\n'
+
+	// Page Footer
+	+footer-classic

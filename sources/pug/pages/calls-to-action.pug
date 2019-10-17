@@ -1,0 +1,40 @@
+extends  ../_skeleton
+
+block variables
+	- var activeCategory = 'elements'
+	- var pageName = 'Calls to action'
+
+block page  
+	// Page Header
+	+header-classic: include ../includes/_aside-navbar-classic
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-blog-2'
+	})
+
+	// Calls to action
+	section.section.section-xl.bg-brown-1
+		.container
+			h3.text-spacing-100 Summer
+				=' '
+				span.font-weight-light sale
+			h6.font-weight-light Get access to the best discounts on fruits, berries, and vegetables.
+			a.button.button-lg.button-shadow-2.button-primary.button-zakaria( href='#' ) Shop Now
+	='\n'
+
+	// Calls to action
+	section.section.section-xl.bg-gray-3.text-md-left
+		.container: .row.row-30.align-items-center.justify-content-md-between
+			.col-md-6.col-lg-8
+				h3.text-spacing-100 Summer
+					=' '
+					span.font-weight-light sale
+				h6.font-weight-light Get access to the best discounts on fruits, berries, and vegetables.
+			.col-md-auto
+				a.button.button-lg.button-shadow-2.button-primary.button-zakaria( href='#' ) Shop Now
+	='\n'
+
+	// Page Footer
+	+footer-classic

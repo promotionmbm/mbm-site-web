@@ -1,0 +1,70 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-counters
+
+block variables
+	- var activeCategory = 'elements'
+	- var pageName = 'Counters'
+
+block page 
+	// Page Header
+	+header-classic: include ../includes/_aside-navbar-classic
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-about'
+	})
+
+	// Counter Classic
+	section.section.section-xl.bg-default
+		.container
+			.row.row-30.justify-content-center.bordered-1
+				.col-sm-4
+					+counter-classic({
+						number: '500',
+						title: 'furniture and decor<br class="d-none d-sm-block"> products'
+					})
+				.col-sm-4
+					+counter-classic({
+						number: '27',
+						title: 'National<br class="d-none d-sm-block"> partners'
+					})
+				.col-sm-4
+					+counter-classic({
+						number: '350',
+						title: 'Qualified<br class="d-none d-sm-block"> team members'
+					})
+	='\n'
+
+	// Counter Modern
+	+parallax({
+		img: 'parallax-2',
+		innerClass: 'section-xxl context-dark'
+	})
+		.container: .row.row-30.justify-content-center
+			.col-6.col-sm-3
+				+counter-modern({
+					number: '245',
+					title: 'New furniture<br class="d-none d-sm-block"> products'
+				})
+			.col-6.col-sm-3
+				+counter-modern({
+					number: '382',
+					title: 'Special<br class="d-none d-sm-block"> offers'
+				})
+			.col-6.col-sm-3
+				+counter-modern({
+					number: '1267',
+					title: 'Satisfied<br class="d-none d-sm-block"> clients'
+				})
+			.col-6.col-sm-3
+				+counter-modern({
+					number: '474',
+					title: 'Partners throughout<br class="d-none d-sm-block"> the USA'
+				})
+	='\n'
+
+	// Page Footer
+	+footer-classic

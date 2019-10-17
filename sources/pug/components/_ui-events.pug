@@ -1,0 +1,20 @@
+mixin event-classic(obj)
+	// Product
+	article.event-classic( class= obj.mod )&attributes(attributes)
+		.unit.unit-spacing-0.flex-column.flex-sm-row.align-items-sm-center
+			.unit-left.align-self-stretch: a.event-classic-figure( href='#' ): +jpg( obj.img ).event-classic-image
+			.unit-body.flex-grow-1
+				.event-classic-body
+					.unit.unit-spacing-sm.flex-column.flex-md-row-reverse.justify-content-md-between
+						.unit-left: block
+						.unit-body
+							h4.event-classic-title: a( href='#' )= obj.title
+							ul.event-classic-panel
+								li.event-classic-price
+									span.icon.fa.fa-money
+									span=  ' - $' + obj.price + '.00'
+								li.event-classic-location
+									span.icon.fa.fa-location-arrow
+									a( href='#' )= obj.location
+							p.event-classic-text= obj.text
+							a.link-classic.event-classic-link( href='#' ) Read more

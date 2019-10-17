@@ -1,0 +1,74 @@
+.row.row-xl.row-30.justify-content-center
+	.col-sm-6.col-lg-4
+		+pricing-classic({
+			img: 'pricing-1-346x229',
+			title: 'Fruit Box',
+			price: '90'
+		})
+			ul.pricing-classic-list
+				li
+					span 2 lb
+					=' '
+					| Apples
+				li
+					span 1.5 lb
+					=' '
+					| Cherries
+				li
+					span 2 lb
+					=' '
+					| Bananas
+				li
+					span 1 lb
+					=' '
+					| Pineapples
+
+	.col-sm-6.col-lg-4
+		+pricing-classic({
+			mod: 'pricing-classic-sale',
+			img: 'pricing-2-346x229',
+			title: 'Mix Box',
+			price: '120',
+			priceOld: '300'
+		})
+			ul.pricing-classic-list
+				li
+					span 3 lb
+					=' '
+					| Oranges
+				li
+					span 1.6 lb
+					=' '
+					| Tomatoes
+				li
+					span 1.5 lb
+					=' '
+					| Melons
+				li
+					span 2.8 lb
+					=' '
+					| Peppers
+
+	.col-sm-6.col-lg-4
+		+pricing-classic({
+			img: 'pricing-3-346x229',
+			title: 'Veggie Box',
+			price: '100'
+		})
+			ul.pricing-classic-list
+				li
+					span 4 lb
+					=' '
+					| Cucumbers
+				li
+					span 1.8 lb
+					=' '
+					| Carrots
+				li
+					span 3 lb
+					=' '
+					| Potatoes
+				li
+					span 2 lb
+					=' '
+					| Tomatoes

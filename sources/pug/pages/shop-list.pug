@@ -1,0 +1,71 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-product
+include ../components/_ui-pagination
+
+block variables
+	- var activeCategory = 'shop'
+	- var pageName = 'Shop List'
+
+block page
+	// Page Header
+	+header-classic: include ../includes/_aside-navbar-classic
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-blog-2'
+	})
+
+	// Section Shop
+	section.section.section-xxl.bg-default.text-md-left
+		.container: .row.row-50
+			.col-lg-4.col-xl-3: include ../includes/_aside-product
+			.col-lg-8.col-xl-9
+				.product-top-panel.group-md
+					p.product-top-panel-title Showing 1–12 of 28 results
+					div: .group-sm.group-middle
+						.product-top-panel-sorting
+							select(data-minimum-results-for-search="Infinity")
+								option(value="1") Sort by newness
+								option(value="2") Sort by popularity
+								option(value="3") Sort by alphabet
+
+						.product-view-toggle
+							a.mdi.mdi-apps.product-view-link.product-view-grid(href=links.shop)
+							a.mdi.mdi-format-list-bulleted.product-view-link.product-view-list.active(href='shop-list.html')
+
+				.row.row-30.row-md-50.row-lg-60
+					.col-12
+						+product-horizontal({
+							mod: 'text-center text-sm-left',
+							unit: 'flex-column flex-sm-row',
+							img: 'product-big-1-328x330',
+							title: 'Club Chair',
+							price: '23',
+							priceOld: '30'
+						})
+					.col-12
+						+product-horizontal({
+							mod: 'text-center text-sm-left',
+							unit: 'flex-column flex-sm-row',
+							img: 'product-big-2-328x330',
+							title: 'Pendant Lamp',
+							price: '15'
+						})
+					.col-12
+						+product-horizontal({
+							mod: 'text-center text-sm-left',
+							unit: 'flex-column flex-sm-row',
+							img: 'product-big-3-328x330',
+							title: 'Garden Table',
+							price: '25',
+							priceOld: '35'
+						})
+
+				.pagination-wrap: +pagination-bootstrap(null, 1, 3)
+	='\n'
+
+	// Page Footer
+	+footer-classic

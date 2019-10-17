@@ -1,0 +1,102 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-thumbnail
+
+block variables
+	- var activeCategory = 'gallery'
+	- var pageName = 'Grid Fullwidth Gallery'
+
+block page  
+	// Page Header
+	+header-classic: include ../includes/_aside-navbar-classic
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-blog-2'
+	})
+
+	// Grid Gallery
+	section.section.section-xl.bg-default
+		.container-fluid.isotope-wrap.isotope-custom-2
+			.isotope-filters
+				//- Isotope Filters
+				button.isotope-filters-toggle.button.button-sm.button-icon.button-icon-right.button-default-outline(data-custom-toggle='.isotope-filters-list', data-custom-toggle-hide-on-blur='true' data-custom-toggle-disable-on-blur='true')
+					span.icon.mdi.mdi-chevron-down
+					| Filter
+
+				.isotope-filters-list-wrap
+					ul.isotope-filters-list
+						li: a.active(href='#', data-isotope-filter='*') View All
+						li: a(href='#', data-isotope-filter='Type 1') Furniture
+						li: a(href='#', data-isotope-filter='Type 2') Decor
+
+			.row.row-30.isotope( data-lightgallery='group' )
+				.col-sm-6.col-md-4.col-xl-3.isotope-item(data-filter='Type 1')
+					+thumbnail-classic({
+						img: 'grid-fullwidth-gallery-1-480x339',
+						imgOriginal: 'grid-fullwidth-gallery-1-1200x800-original',
+						title: 'Hearst Center',
+						tag: 'Furniture'
+					})
+
+				.col-sm-6.col-md-4.col-xl-3.isotope-item(data-filter='Type 1')
+					+thumbnail-classic({
+						img: 'grid-fullwidth-gallery-2-480x339',
+						imgOriginal: 'grid-fullwidth-gallery-2-1200x800-original',
+						title: 'Monroe’s Bar',
+						tag: 'Decor'
+					})
+
+				.col-sm-6.col-md-4.col-xl-3.isotope-item(data-filter='Type 1')
+					+thumbnail-classic({
+						img: 'grid-fullwidth-gallery-3-480x339',
+						imgOriginal: 'grid-fullwidth-gallery-3-1200x800-original',
+						title: 'Q-Biz Coworking',
+						tag: 'Furniture'
+					})
+
+				.col-sm-6.col-md-4.col-xl-3.isotope-item(data-filter='Type 2')
+					+thumbnail-classic({
+						img: 'grid-fullwidth-gallery-4-480x339',
+						imgOriginal: 'grid-fullwidth-gallery-4-1200x800-original',
+						title: 'New York Public Library',
+						tag: 'Decor'
+					})
+
+				.col-sm-6.col-md-4.col-xl-3.isotope-item(data-filter='Type 2')
+					+thumbnail-classic({
+						img: 'grid-fullwidth-gallery-5-480x339',
+						imgOriginal: 'grid-fullwidth-gallery-5-1200x800-original',
+						title: 'Flash Cafe',
+						tag: 'Furniture'
+					})
+
+				.col-sm-6.col-md-4.col-xl-3.isotope-item(data-filter='Type 1')
+					+thumbnail-classic({
+						img: 'grid-fullwidth-gallery-6-480x339',
+						imgOriginal: 'grid-fullwidth-gallery-6-1200x800-original',
+						title: 'Sunshine Restaurant',
+						tag: 'Decor'
+					})
+
+				.col-sm-6.col-md-4.col-xl-3.isotope-item(data-filter='Type 1')
+					+thumbnail-classic({
+						img: 'grid-fullwidth-gallery-7-480x339',
+						imgOriginal: 'grid-fullwidth-gallery-7-1200x800-original',
+						title: 'u-Style Fashion House',
+						tag: 'Decor'
+					})
+
+				.col-sm-6.col-md-4.col-xl-3.isotope-item(data-filter='Type 1')
+					+thumbnail-classic({
+						img: 'grid-fullwidth-gallery-8-480x339',
+						imgOriginal: 'grid-fullwidth-gallery-8-1200x800-original',
+						title: 'Quadro hotel',
+						tag: 'Furniture'
+					})
+	='\n'
+
+	// Page Footer
+	+footer-classic

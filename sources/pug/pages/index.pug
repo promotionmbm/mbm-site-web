@@ -1,0 +1,307 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-box-icon
+include ../svg-icons/_ui-svg-icons
+include ../components/_ui-product
+include ../components/_ui-quote
+include ../components/_ui-team
+include ../components/_ui-card
+include ../components/_ui-posts
+include ../sections/_google-map
+include ../components/_ui-inline-subscribe-form
+include ../components/_ui-thumbnail
+
+block variables
+  -
+    var
+    activeCategory = 'home',
+    pageName = 'Home';
+
+block page
+  // Page Header
+  +header-classic: include ../includes/_aside-navbar-classic
+
+  // Swiper
+  section.section.swiper-container.swiper-slider.swiper-slider-1( data-loop='true' )
+    .swiper-wrapper.text-center.text-lg-left
+      .swiper-slide.swiper-slide-caption.context-dark( data-slide-bg='images/slide-1.jpg' )
+        .swiper-slide-caption.section-md.text-center: .container
+          h1.swiper-title-1( data-caption-animate='fadeScale', data-caption-delay='100' ) Top-notch Furniture
+          p.biggest.text-white-70( data-caption-animate='fadeScale', data-caption-delay='200' ) Sofa Store provides the best furniture and accessories for homes and offices.
+          .button-wrap( data-caption-animate='fadeInUp', data-caption-delay='300' )
+            a.button.button-zachem-tak-delat.button-white.button-zakaria( href=links.shop ) Shop now
+
+      .swiper-slide( data-slide-bg='images/slide-2.jpg' )
+        .swiper-slide-caption.section-md: .container: .row.row-fix: .col-lg-5
+          h1.swiper-title-1( data-caption-animate='fadeScale', data-caption-delay='100' )
+            span.text-gray-22 Quality&nbsp;
+            br.d-none.d-lg-block
+            span.text-gray-23 Decor
+          p.biggest.mw-lg-330( data-caption-animate='fadeScale', data-caption-delay='200' ) Choose anything you need from a wide range of impressive home decor solutions.
+          .button-wrap( data-caption-animate='fadeInUp', data-caption-delay='300' )
+            a.button.button-zachem-tak-delat.button-gray-1000.button-zakaria( href=links.shop ) Shop now
+
+      .swiper-slide( data-slide-bg='images/slide-3.jpg' )
+        .swiper-slide-caption.section-md: .container: .row.row-fix: .col-lg-5
+          h1.swiper-title-1( data-caption-animate='fadeScale', data-caption-delay='100' )
+            span.text-gray-22 Impressive&nbsp;
+            br.d-none.d-lg-block
+            span.text-gray-23 Lighting
+          p.biggest.mw-350( data-caption-animate='fadeScale', data-caption-delay='200' ) Improve your home’s lighting with hundreds of products available at Sofa.
+          .button-wrap( data-caption-animate='fadeInUp', data-caption-delay='300' )
+            a.button.button-zachem-tak-delat.button-gray-1000.button-zakaria( href=links.shop ) Shop now
+
+    // Swiper Pagination
+    .swiper-pagination
+
+    // Swiper Navigation
+    .swiper-button-prev
+    .swiper-button-next
+  ='\n'
+
+  // Icons 2
+  section.section.section-xl.section-inset-1.bg-brown-2
+    .container
+      h2.font-weight-regular Categories
+      .row.row-30
+        .col-sm-6.col-lg-4
+          +box-icon-creative({
+            unit: 'flex-column flex-md-row flex-lg-column flex-xl-row align-items-md-center align-items-lg-start align-items-xl-center unit-spacing-xs',
+            icon: 'linearicons-couch',
+            title: 'living room',
+            text: 'Sofas, coffee tables, couches'
+          }).wow.fadeInRight( data-wow-delay='.1s' )
+
+        .col-sm-6.col-lg-4
+          +box-icon-creative({
+            unit: 'flex-column flex-md-row flex-lg-column flex-xl-row align-items-md-center align-items-lg-start align-items-xl-center unit-spacing-xs',
+            icon: 'linearicons-bed',
+            title: 'bedroom',
+            text: 'Beds, nightstands, dressers'
+          }).wow.fadeInRight( data-wow-delay='.2s' )
+
+        .col-sm-6.col-lg-4
+          +box-icon-creative({
+            unit: 'flex-column flex-md-row flex-lg-column flex-xl-row align-items-md-center align-items-lg-start align-items-xl-center unit-spacing-xs',
+            icon: 'linearicons-drawers3',
+            title: 'dining room',
+            text: 'Tables, chairs, cabinets'
+          }).wow.fadeInRight( data-wow-delay='.3s' )
+        .col-sm-6.col-lg-4
+          +box-icon-creative({
+            unit: 'flex-column flex-md-row flex-lg-column flex-xl-row align-items-md-center align-items-lg-start align-items-xl-center unit-spacing-xs',
+            icon: 'linearicons-bathtub',
+            title: 'Bathroom',
+            text: 'Vanities, mirrors, lighting'
+          }).wow.fadeInRight( data-wow-delay='.4s' )
+
+        .col-sm-6.col-lg-4
+          +box-icon-creative({
+            unit: 'flex-column flex-md-row flex-lg-column flex-xl-row align-items-md-center align-items-lg-start align-items-xl-center unit-spacing-xs',
+            icon: 'linearicons-lampshade',
+            title: 'DEcor & furniture',
+            text: 'Cushions, wall art, drapery'
+          }).wow.fadeInRight( data-wow-delay='.5s' )
+
+        .col-sm-6.col-lg-4
+          +box-icon-creative({
+            unit: 'flex-column flex-md-row flex-lg-column flex-xl-row align-items-md-center align-items-lg-start align-items-xl-center unit-spacing-xs',
+            icon: 'linearicons-baby2',
+            title: 'kids room',
+            text: 'Kids beds, trundlers, dressers'
+          }).wow.fadeInRight( data-wow-delay='.6s' )
+  ='\n'
+
+
+  // New Products
+  section.section.section-xxl.bg-default
+    .container
+      h2.wow.fadeScale Trending Products
+      .row.row-30.row-lg-50
+        .col-sm-6.col-md-4.col-lg-3
+          +product({
+            img: 'product-1-129x172',
+            title: 'Garden table',
+            price: '23',
+            priceOld: '30'
+          }).wow.fadeInRight
+        .col-sm-6.col-md-4.col-lg-3
+          +product({
+            img: 'product-2-160x155',
+            title: 'Club Chair',
+            price: '13',
+            new: true
+          }).wow.fadeInRight( data-wow-delay='.1s' )
+        .col-sm-6.col-md-4.col-lg-3
+          +product({
+            img: 'product-3-132x200',
+            title: 'pendant lamp',
+            price: '17'
+          }).wow.fadeInRight( data-wow-delay='.2s' )
+        .col-sm-6.col-md-4.col-lg-3
+          +product({
+            img: 'product-4-140x168',
+            title: 'Dark grey club chair',
+            price: '14',
+            new: true
+          }).wow.fadeInRight( data-wow-delay='.3s' )
+        .col-sm-6.col-md-4.col-lg-3
+          +product({
+            img: 'product-5-131x168',
+            title: 'Table Lamp',
+            price: '11',
+            new: true
+          }).wow.fadeInLeft( data-wow-delay='.3s' )
+        .col-sm-6.col-md-4.col-lg-3
+          +product({
+            img: 'product-6-110x69',
+            title: 'Orange Stacking chair',
+            price: '15'
+          }).wow.fadeInLeft( data-wow-delay='.2s' )
+        .col-sm-6.col-md-4.col-lg-3
+          +product({
+            img: 'product-7-121x201',
+            title: 'Floor lamp',
+            price: '22',
+            priceOld: '32'
+          }).wow.fadeInLeft( data-wow-delay='.1s' )
+        .col-sm-6.col-md-4.col-lg-3
+          +product({
+            img: 'product-8-128x179',
+            title: 'White Chair',
+            price: '10'
+          }).wow.fadeInLeft
+  ='\n'
+
+
+  // About Us
+  section.section.section-xxl.section-inset-1.bg-gradient-ishaaak.text-md-left
+    .container: .row.row-30.align-items-center.justify-content-center.justify-content-xl-between
+      .col-sm-6.col-md-5.col-lg-7.wow.fadeInLeft: +png( 'about-8-668x330' )
+      .col-md-7.col-lg-6.col-xl-5
+        h2.wow.fadeInRight( data-wow-delay='.1s' ) providing the best furniture and decor
+        p.big.offset-top-md-20.wow.fadeInRight( data-wow-delay='.2s' ) At Sofa, we aim to supply our customers with the first-class furniture & decor products that make their life comfortable.
+        .group-xl.group-middle.d-md-flex.justify-content-sm-start.wow.fadeInRight( data-wow-delay='.3s' )
+          div: .group-lg.group-middle
+            a.button.button-sm.button-icon-3.button-primary.button-zakaria( href=links.about ): span.mdi.mdi-arrow-right
+            .team-navy
+              .team-navy-name: a( href='#' ) Sam Williams
+              .team-navy-status Founder
+
+          +png('signature-1-160x55')
+  ='\n'
+
+  // Masonry Gallery
+  section.section.section-xxl.bg-defaults
+    .container
+      h2.wow.fadeScale Portfolio
+      .isotope-wrap
+        .row.row-30.isotope.isotope-custom-1(data-lightgallery='group')
+          .col-sm-6.col-lg-4.col-xl-3.isotope-item
+            +thumbnail-portfolio({
+              img: 'portfolio-7-270x250',
+              imgOriginal: 'portfolio-original-7',
+              title: 'Sunshine Restaurant',
+              category: 'Decor'
+            })
+
+          .col-sm-6.col-lg-4.col-xl-3.isotope-item
+            +thumbnail-portfolio({
+              img: 'portfolio-5-270x530',
+              imgOriginal: 'portfolio-original-5',
+              title: 'Quadro hotel',
+              category: 'Furniture'
+            })
+
+          .col-sm-6.col-lg-4.col-xl-3.isotope-item
+            +thumbnail-portfolio({
+              img: 'portfolio-3-270x250',
+              imgOriginal: 'portfolio-original-3',
+              title: 'u-Style Fashion House',
+              category: 'Decor'
+            })
+
+          .col-sm-6.col-lg-4.col-xl-3.isotope-item
+            +thumbnail-portfolio({
+              img: 'portfolio-4-270x250',
+              imgOriginal: 'portfolio-original-4',
+              title: 'Flash Cafe',
+              category: 'Furniture'
+            })
+
+          .col-sm-6.col-lg-4.col-xl-3.isotope-item
+            +thumbnail-portfolio({
+              img: 'portfolio-6-270x250',
+              imgOriginal: 'portfolio-original-6',
+              title: 'New York Public Library',
+              category: 'Decor'
+            })
+
+          .col-sm-6.col-lg-4.col-xl-6.isotope-item
+            +thumbnail-portfolio({
+              img: 'portfolio-1-570x530',
+              imgOriginal: 'portfolio-original-1',
+              title: 'Q-Biz Coworking',
+              category: 'Furniture'
+            })
+
+          .col-sm-6.col-lg-8.col-xl-6.isotope-item
+            +thumbnail-portfolio({
+              img: 'portfolio-2-570x250',
+              imgOriginal: 'portfolio-original-2',
+              title: 'Monroe’s Bar',
+              category: 'Decor'
+            })
+
+  // Our Blog
+  section.section.section-xxl.section-last.bg-gray-21
+    .container
+      h2.wow.fadeScale Blog
+    // Owl Carousel
+    .owl-carousel.owl-style-7( data-items='1' data-sm-items='2' data-xl-items='3' data-xxl-items='4' data-nav='true' data-dots='true' data-margin='30' data-autoplay='true' )
+      +post-creative({
+        img: 'post-10-420x368',
+        title: 'Top 20 Interior Home Decor <br>Trends of 2019',
+        time: {
+          datetime: '2019-08-09',
+          dateText: 'August 9, 2019'
+        }
+      })
+      +post-creative({
+        img: 'post-11-420x368',
+        title: 'How to Choose Furniture for <br>Your Home',
+        time: {
+          datetime: '2019-08-09',
+          dateText: 'August 9, 2019'
+        }
+      })
+      +post-creative({
+        img: 'post-12-420x368',
+        title: 'LED Lighting and Its Benefits <br>for Homeowners',
+        time: {
+          datetime: '2019-08-09',
+          dateText: 'August 9, 2019'
+        }
+      })
+      +post-creative({
+        img: 'post-13-420x368',
+        title: 'What to Look for When <br> Shopping for Chairs Online',
+        time: {
+          datetime: '2019-08-09',
+          dateText: 'August 9, 2019'
+        }
+      })
+      +post-creative({
+        img: 'post-14-420x368',
+        title: 'Ways to Decorate Your Home <br> with the Color Red',
+        time: {
+          datetime: '2019-08-09',
+          dateText: 'August 9, 2019'
+        }
+      })
+  ='\n'
+
+
+  // Page Footer
+  +footer-classic

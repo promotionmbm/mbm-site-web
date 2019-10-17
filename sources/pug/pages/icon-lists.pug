@@ -1,0 +1,114 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-box-icon
+include ../svg-icons/_ui-svg-icons
+
+block variables
+	- var activeCategory = 'elements'
+	- var pageName = 'Icon Lists'
+
+block page  
+	// Page Header
+	+header-classic: include ../includes/_aside-navbar-classic
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-blog-2'
+	})
+
+	// Section Services
+	section.section.section-md.bg-default
+		.container
+			.row.row-30.box-ordered
+				.col-sm-6.col-lg-3
+					+box-icon-modern({
+						icon: 'fl-bigmug-line-big104',
+						title: 'Free shipping',
+						text: 'Cur tantas regiones barbarorum peat dibus obiit, tregiones barbarorum peat dibus obiit, tot mariata'
+					})
+				.col-sm-6.col-lg-3
+					+box-icon-modern({
+						icon: 'fl-bigmug-line-shopping199',
+						title: 'Quality furniture',
+						text: 'Pellentesque cursus imperdiet magna quis euismod. Aenean ut aliquet dolor. Integer sodales tortor.'
+					})
+				.col-sm-6.col-lg-3
+					+box-icon-modern({
+						icon: 'fl-bigmug-line-like51',
+						title: 'Unique Decor',
+						text: 'Nam a congue nibh. Morbi cursus nisi ac ex malesuada, ac pharetra augue sodales. Nullam sit amet.'
+					})
+				.col-sm-6.col-lg-3
+					+box-icon-modern({
+						icon: 'fl-bigmug-line-giftbox54',
+						title: 'Gifts for clients',
+						text: 'Curabitur orci lorem, porttitor sed enim non, varius volutpat felis. Vestibulum euismod ex quis ultricies.'
+					})
+	='\n'
+
+	// Icons 2
+	section.section.section-md.bg-brown-2
+		.container
+			h2.font-weight-regular #2
+			.row.row-30
+				.col-sm-6.col-lg-4
+					+box-icon-creative({
+						unit: 'flex-column flex-md-row flex-lg-column flex-xl-row align-items-md-center align-items-lg-start align-items-xl-center unit-spacing-xs',
+						icon: 'linearicons-couch',
+						title: 'Free delivery',
+						text: 'Sofas, coffee tables, couches'
+					})
+
+				.col-sm-6.col-lg-4
+					+box-icon-creative({
+						unit: 'flex-column flex-md-row flex-lg-column flex-xl-row align-items-md-center align-items-lg-start align-items-xl-center unit-spacing-xs',
+						icon: 'linearicons-bed',
+						title: 'customer care',
+						text: 'Beds, nightstands, dressers'
+					})
+
+				.col-sm-6.col-lg-4
+					+box-icon-creative({
+						unit: 'flex-column flex-md-row flex-lg-column flex-xl-row align-items-md-center align-items-lg-start align-items-xl-center unit-spacing-xs',
+						icon: 'linearicons-drawers3',
+						title: 'High quality',
+						text: 'Tables, chairs, cabinets'
+					})
+	='\n'
+
+	// Icons 3
+	section.section.section-md.bg-default
+		.container
+			h2.font-weight-regular #3
+			.row.row-30
+				.col-sm-6.col-md-4
+					+box-icon-classic({
+						mod: 'text-sm-left',
+						unit: 'flex-column flex-sm-row flex-md-column flex-xl-row',
+						title: 'Best service',
+						icon: 'fl-bigmug-line-chat51'
+					})
+
+
+				.col-sm-6.col-md-4
+					+box-icon-classic({
+						mod: 'text-sm-left',
+						unit: 'flex-column flex-sm-row flex-md-column flex-xl-row',
+						title: 'reputation',
+						icon: 'fl-bigmug-line-favourites5'
+					})
+
+
+				.col-sm-6.col-md-4
+					+box-icon-classic({
+						mod: 'text-sm-left',
+						unit: 'flex-column flex-sm-row flex-md-column flex-xl-row',
+						title: 'Safety',
+						icon: 'fl-bigmug-line-big104'
+					})
+	='\n'
+
+	// Page Footer
+	+footer-classic

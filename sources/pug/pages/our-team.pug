@@ -1,0 +1,86 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-team
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Our Team'
+
+block page  
+	// Page Header
+	+header-classic: include ../includes/_aside-navbar-classic
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-blog-2'
+	})
+
+	// Team Classic
+	section.section.section-sm.section-first.bg-default
+		.container
+			h3.font-weight-regular #1
+			.row.row-lg.row-30.justify-content-center
+				.col-sm-6.col-md-4
+					+team-classic({
+						mod: 'box-md',
+						img: 'team-15-370x334',
+						name: 'kate ferrand',
+						text: 'Cum exsul crescere, omnes lanistaes experientia gratis, castus detriuses.'
+					})
+				.col-sm-6.col-md-4
+					+team-classic({
+						mod: 'box-md',
+						img: 'team-16-370x334',
+						name: 'Rick Martinez',
+						text: 'Cum zelus mori, omnes repressores desiderium magnum, rusticus medicinaes.'
+					})
+				.col-sm-6.col-md-4
+					+team-classic({
+						mod: 'box-md',
+						img: 'team-17-370x334',
+						name: 'samantha williams',
+						text: 'Cum compater resistere, omnes menses fallere placidus, germanus gemnaes.'
+					})
+	='\n'
+
+	// Team Modern
+	section.section.section-sm.section-last.bg-default
+		.container
+			h3.font-weight-regular #2
+			.row.row-lg.row-30.justify-content-center
+				.col-sm-6.col-md-5.col-lg-3
+					+team-modern({
+						mod: 'box-sm',
+						img: 'team-4-270x227',
+						name: 'Caroline Lopez',
+						text: 'Galluss potus in gratis palatium! Sunt orexises tractare bassus'
+					})
+				.col-sm-6.col-md-5.col-lg-3
+					+team-modern({
+						mod: 'box-sm',
+						img: 'team-5-270x227',
+						name: 'Peter Williams',
+						text: 'Humani generis, tus, et luba. Hippotoxotas sunt tatas de mirabilis'
+					})
+				.col-sm-6.col-md-5.col-lg-3
+					+team-modern({
+						mod: 'box-sm',
+						img: 'team-6-270x227',
+						name: 'Rebecca Smith',
+						text: 'Torquis peritus navis est. Cum calceus crescere, omnes'
+					})
+				.col-sm-6.col-md-5.col-lg-3
+					+team-modern({
+						mod: 'box-sm',
+						img: 'team-7-270x227',
+						name: 'John Smith',
+						text: 'Ubi est dexter candidatus? Cum adgium crescere, omnes abactuses'
+					})
+	='\n'
+
+
+
+	// Page Footer
+	+footer-classic

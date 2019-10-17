@@ -1,0 +1,27 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-thumbnail
+
+block variables
+	- var activeCategory = 'gallery'
+	- var pageName = 'Masonry Gallery'
+
+block page  
+	// Page Header
+	+header-classic: include ../includes/_aside-navbar-classic
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-blog-2'
+	})
+
+	// Masonry Gallery
+	section.section.section-xl.bg-default
+		.container
+			include ../includes/_masonry-gallery
+	='\n'
+
+	// Page Footer
+	+footer-classic
