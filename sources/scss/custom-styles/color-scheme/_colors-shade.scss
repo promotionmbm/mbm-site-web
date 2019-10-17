@@ -1,0 +1,8 @@
+//
+// Accent Colors Shade
+//
+
+$primary-1: darken(saturate(adjust_hue($primary, 29.706879361914275), 9.215231728574771%), 7.450980392156865%);
+$primary-2: lighten(saturate(adjust_hue($primary, 11.285310734463309), 10.97050173781303%), 6.470588235294116%);
+
+$secondary-1: lighten(saturate(adjust_hue($secondary, 2.764976958525331), 7.1856287425149645%), 5.294117647058812%);
