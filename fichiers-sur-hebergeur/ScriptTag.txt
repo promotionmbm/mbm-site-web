@@ -1,0 +1,2 @@
+<script src="/Storage/80/2122/Bootstrap/js/core.min.js"></script>
+    <script src="/Storage/80/2122/Bootstrap/js/script.js"></script>
