@@ -11496,7 +11496,7 @@ html.tablet .ui-to-top {
 
 @media (min-width: 1200px) {
 	.rd-navbar-static .rd-megamenu-list-item + .rd-megamenu-list-item {
-		margin-top: 24px;
+		margin-top: 8px;
 	}
 }
 
@@ -11506,7 +11506,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-megamenu-list-link:hover {
-	color: #76871e;
+	color: #d2451e;
 	background: transparent;
 }
 
