@@ -1,0 +1,16 @@
+<div class="group-md group-middle">
+                  <div class="single-product-price">{Price}</div>
+                </div>
+                <hr class="hr-gray-100">
+                <ul class="list list-description">
+                  <li><span>Categories:</span><span>Furniture</span></li>
+                  <li><span>Weight:</span><span>1 lbs</span></li>
+                  <li><span>Dimensions:</span><span>{SetSize}</span></li>
+                </ul>
+                {Result}
+                <div class="group-xs group-middle">
+                  <div class="product-stepper">
+                    {Quantity}
+                  </div>
+                  <div>{AddToCart}</div>
+                </div>

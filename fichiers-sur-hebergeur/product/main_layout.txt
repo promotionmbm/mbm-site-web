@@ -1,0 +1,199 @@
+<section class="breadcrumbs-custom">
+        <div class="parallax-container" data-parallax-img="images/bg-blog-2.jpg">
+          <div class="breadcrumbs-custom-body parallax-content context-dark">
+            <div class="container">
+              <h2 class="breadcrumbs-custom-title">Single Product</h2>
+            </div>
+          </div>
+        </div>
+        <div class="breadcrumbs-custom-footer">
+          <div class="container">
+            <ul class="breadcrumbs-custom-path">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="grid-shop.html">Shop</a></li>
+              <li class="active">Single Product</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Single Product-->
+      <section class="section section-sm section-first bg-default">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-lg-6">
+              <div class="slick-vertical slick-product">
+                <!-- Slick Carousel-->
+                <div class="slick-slider carousel-parent" id="carousel-parent" data-items="1" data-swipe="true" data-child="#child-carousel" data-for="#child-carousel">
+                  <div class="item">
+                    <div class="slick-product-figure"><img src="images/single-product-1-530x480.png" alt="" width="530" height="480"/>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="slick-product-figure"><img src="images/single-product-2-530x480.png" alt="" width="530" height="480"/>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="slick-product-figure"><img src="images/single-product-3-530x480.png" alt="" width="530" height="480"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="slick-slider child-carousel slick-nav-1" id="child-carousel" data-arrows="true" data-items="3" data-sm-items="3" data-md-items="3" data-lg-items="3" data-xl-items="3" data-xxl-items="3" data-md-vertical="true" data-for="#carousel-parent">
+                  <div class="item">
+                    <div class="slick-product-figure"><img src="images/single-product-1-530x480.png" alt="" width="530" height="480"/>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="slick-product-figure"><img src="images/single-product-2-530x480.png" alt="" width="530" height="480"/>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="slick-product-figure"><img src="images/single-product-3-530x480.png" alt="" width="530" height="480"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="single-product">
+                <h3 class="text-transform-none font-weight-medium">White Club Chair</h3>
+                <div class="group-md group-middle">
+                  <div class="single-product-price">$20</div>
+                  <div class="single-product-rating"><span class="icon mdi mdi-star"></span><span class="icon mdi mdi-star"></span><span class="icon mdi mdi-star"></span><span class="icon mdi mdi-star"></span><span class="icon mdi mdi-star-half"></span></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, ei impetus epicurei his, ne falli erant consequuntur est. Mei simul aperiam eu, an rebum regione ponderum mel. Facer placerat ut duo, id duis solum maiorum vis, vim autemsemper docendi cu. Pro</p>
+                <hr class="hr-gray-100">
+                <ul class="list list-description">
+                  <li><span>Categories:</span><span>Furniture</span></li>
+                  <li><span>Weight:</span><span>1 lbs</span></li>
+                  <li><span>Dimensions:</span><span>60 x 60 x 90 cm</span></li>
+                </ul>
+                <div class="group-xs group-middle">
+                  {OrderPanel}
+                </div>
+                <hr class="hr-gray-100">
+                <div class="group-xs group-middle"><span class="list-social-title">Share</span>
+                  <div>
+                    <ul class="list-inline list-social list-inline-sm">
+                      <li><a class="icon mdi mdi-facebook" href="#"></a></li>
+                      <li><a class="icon mdi mdi-twitter" href="#"></a></li>
+                      <li><a class="icon mdi mdi-instagram" href="#"></a></li>
+                      <li><a class="icon mdi mdi-google-plus" href="#"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Bootstrap tabs-->
+          <div class="tabs-custom tabs-horizontal tabs-line" id="tabs-1">
+            <!-- Nav tabs-->
+            <div class="nav-tabs-wrap">
+              <ul class="nav nav-tabs nav-tabs-1">
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-1" data-toggle="tab">Additional information</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2" data-toggle="tab">Delivery and payment</a></li>
+              </ul>
+            </div>
+            <!-- Tab panes-->
+            <div class="tab-content tab-content-1">
+              <div class="tab-pane fade" id="tabs-1-1">
+                <div class="single-product-info">
+                  <div class="unit unit-spacing-md flex-column flex-sm-row align-items-sm-center">
+                    <div class="unit-left"><span class="icon icon-80 mdi mdi-information-outline"></span></div>
+                    <div class="unit-body">
+                      <p>In aliquet varius leo, ut convallis ligula consectetur quis. Quisque eu metus est. Praesent tristique mauris urna, sed mattis urna varius quis. Vestibulum fermentum, metus sed eleifend viverra, magna ipsum feugiat sem, id rutrum magna nulla a turpis. Maecenas laoreet, nibh at mattis mattis, nunc ligula scelerisque dolor, ac posuere lorem tellus vel purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras imperdiet ex et risus elementum pretium.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tabs-1-2">
+                <div class="single-product-info">
+                  <div class="unit unit-spacing-md flex-column flex-sm-row align-items-sm-center">
+                    <div class="unit-left"><span class="icon icon-80 mdi mdi-truck-delivery"></span></div>
+                    <div class="unit-body">
+                      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat . At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Products-->
+      <section class="section section-sm section-last bg-default">
+        <div class="container">
+          <h4 class="font-weight-sbold">Featured Products</h4>
+          <div class="row row-lg row-30 row-lg-50 justify-content-center">
+            <div class="col-sm-6 col-md-5 col-lg-3">
+              <!-- Product-->
+              <article class="product">
+                <div class="product-body">
+                  <div class="product-figure"><img src="images/product-1-129x172.png" alt="" width="129" height="172"/>
+                  </div>
+                  <h5 class="product-title"><a href="single-product.html">Garden table</a></h5>
+                  <div class="product-price-wrap">
+                    <div class="product-price product-price-old">$30.00</div>
+                    <div class="product-price">$23.00</div>
+                  </div>
+                </div><span class="product-badge product-badge-sale">Sale</span>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                  <div class="product-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-3">
+              <!-- Product-->
+              <article class="product">
+                <div class="product-body">
+                  <div class="product-figure"><img src="images/product-2-160x155.png" alt="" width="160" height="155"/>
+                  </div>
+                  <h5 class="product-title"><a href="single-product.html">Club Chair</a></h5>
+                  <div class="product-price-wrap">
+                    <div class="product-price">$13.00</div>
+                  </div>
+                </div><span class="product-badge product-badge-new">New</span>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                  <div class="product-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-3">
+              <!-- Product-->
+              <article class="product">
+                <div class="product-body">
+                  <div class="product-figure"><img src="images/product-3-132x173.png" alt="" width="132" height="173"/>
+                  </div>
+                  <h5 class="product-title"><a href="single-product.html">pendant lamp</a></h5>
+                  <div class="product-price-wrap">
+                    <div class="product-price">$17.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                  <div class="product-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-3">
+              <!-- Product-->
+              <article class="product">
+                <div class="product-body">
+                  <div class="product-figure"><img src="images/product-4-140x168.png" alt="" width="140" height="168"/>
+                  </div>
+                  <h5 class="product-title"><a href="single-product.html">Dark grey club chair</a></h5>
+                  <div class="product-price-wrap">
+                    <div class="product-price">$18.00</div>
+                  </div>
+                </div>
+                <div class="product-button-wrap">
+                  <div class="product-button"><a class="button button-secondary button-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                  <div class="product-button"><a class="button button-primary button-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>

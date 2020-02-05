@@ -1,6 +1,5 @@
 <!-- Header Section Starts -->
-	<!-- Page Header-->
-      <header class="section page-header">
+<header class="section page-header">
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap">
           <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="100px" data-xl-stick-up-offset="100px" data-xxl-stick-up-offset="100px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
@@ -18,90 +17,101 @@
                 <div class="rd-navbar-nav-wrap">
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="Store/Site/Home.aspx">Home</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
-                      <!-- RD Navbar Dropdown-->
-                      <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-us.html">About Us</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="what-we-offer.html">What We Offer</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="our-team.html">Our Team</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="testimonials.html">Testimonials</a></li>
-                      </ul>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="grid-blog.html">Blog</a>
-                      <!-- RD Navbar Dropdown-->
-                      <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-blog.html">Grid Blog</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-list.html">Blog List</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-post.html">Blog Post</a></li>
-                      </ul>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="grid-gallery.html">Gallery</a>
-                      <!-- RD Navbar Dropdown-->
-                      <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-gallery.html">Grid Gallery</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-fullwidth-gallery.html">Grid Fullwidth Gallery</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="masonry-gallery.html">Masonry Gallery</a></li>
-                      </ul>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">Elements</a>
+					<li class="rd-nav-item"><a class="rd-nav-link" href="#">Products</a>
                       <!-- RD Navbar Megamenu-->
                       <ul class="rd-menu rd-navbar-megamenu">
                         <li class="rd-megamenu-item">
-                          <div class="rd-megamenu-title"><span class="rd-megamenu-icon mdi mdi-apps"></span><span class="rd-megamenu-text">Elements</span></div>
-                          <ul class="rd-megamenu-list rd-megamenu-list-2">
-                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="typography.html">Typography</a></li>
-                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="icon-lists.html">Icon lists</a></li>
-                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="progress-bars.html">Progress bars</a></li>
-                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="calls-to-action.html">Calls to action</a></li>
-                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tabs-and-accordions.html">Tabs &amp; accordions</a></li>
-                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="buttons.html">Buttons</a></li>
-                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tables.html">Tables</a></li>
-                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="forms.html">Forms</a></li>
-                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="counters.html">Counters</a></li>
-                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="grid-system.html">Grid system</a></li>
+                          <div class="rd-megamenu-title"><span class="rd-megamenu-icon mdi mdi-tshirt-crew"></span><span class="rd-megamenu-text">Apparel</span></div>
+                          <ul class="rd-megamenu-list">
+							<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">All products</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">T-shirt</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Hoodies</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Coat</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Headwear</a></li>
                           </ul>
                         </li>
-                        <li class="rd-megamenu-item flex-grow-1 flex-shrink-0">
-                          <div class="rd-megamenu-title"><span class="rd-megamenu-icon mdi mdi-layers"></span><span class="rd-megamenu-text">Additional pages</span></div>
+                        <li class="rd-megamenu-item">
+                          <div class="rd-megamenu-title"><span class="rd-megamenu-icon mdi mdi-leaf"></span><span class="rd-megamenu-text">Promo Items</span></div>
                           <ul class="rd-megamenu-list">
-                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="404-page.html">404 Page</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">All Products</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Drinkware</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Bags</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Backpacks</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Golf</a></li>
+                          </ul>
+                        </li>
+                        <li class="rd-megamenu-item">
+                          <div class="rd-megamenu-title"><span class="rd-megamenu-icon mdi mdi-leaf"></span><span class="rd-megamenu-text">Eco Friendly</span></div>
+                          <ul class="rd-megamenu-list">
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">All Products</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Bags</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Seeds Products</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Stationery</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Search Results</a></li>
+                          </ul>
+                        </li>
+						  <li class="rd-megamenu-item">
+                          <div class="rd-megamenu-title"><span class="rd-megamenu-icon mdi mdi-worker"></span><span class="rd-megamenu-text">Workwear & Uniform</span></div>
+                          <ul class="rd-megamenu-list">
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">All Products</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">T-shirt</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Jacket</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Vest</a></li>
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="#">Headwear</a></li>
+                          </ul>
+                        </li>
+						<li class="rd-megamenu-item">
+                          <div class="rd-megamenu-title"><span class="rd-megamenu-icon mdi mdi-layers"></span><span class="rd-megamenu-text">Security Garment</span></div>
+                          <ul class="rd-megamenu-list">
+                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="404-page.html">All Products</a></li>
                             <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="coming-soon.html">Coming Soon</a></li>
                             <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="contact-us.html">Contact Us</a></li>
                             <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="privacy-policy.html">Privacy Policy</a></li>
                             <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="search-results.html">Search Results</a></li>
                           </ul>
                         </li>
-                        <li class="rd-megamenu-item rd-megamenu-banner">
-                          <div class="rd-megamenu-title"><span class="rd-megamenu-icon mdi mdi-sofa"></span><span class="rd-megamenu-text">Welcome to Our Store</span></div><a class="banner-classic" href="grid-shop.html"><img src="images/banner-1-300x202.jpg" alt="" width="300" height="202"/></a>
-                        </li>
                       </ul>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="grid-shop.html">Shop</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">Administration</a>
+                    <ul class="rd-menu rd-navbar-dropdown">
+                        <li class="rd-dropdown-item" user-role="Customer,Manager, Group Manager, Gatekeeper, Group Gatekeeper, Generic With History"><a class="rd-dropdown-link" href="/Store/Site/Admin/OCC.aspx">Orders</a></li>                                <li class="rd-dropdown-item" user-role="Customer, Generic With History"><a class="rd-dropdown-link" href="/Store/Site/Admin/ICC.aspx">Jobs</a></li>
+                        <li class="rd-dropdown-item" user-role="Manager, Group Manager"><a class="rd-dropdown-link" href="/Store/Site/Admin/Users/ManageUsers.aspx">Manage Users</a></li>
+                        <li class="rd-dropdown-item" user-role="Producer"><a class="rd-dropdown-link" href="/Store/Site/Admin/Groups/ManageGroups.aspx">Manage Groups</a></li>
+                        <li class="rd-dropdown-item" user-role="Customer"><a class="rd-dropdown-link" href="/Store/Site/Admin/Addresses/Personal/ManageAddresses.aspx">Address Book</a></li>
+                        <li class="rd-dropdown-item" user-role="Manager, Group Manager"><a class="rd-dropdown-link" href="/Store/Site/Admin/Addresses/Company/ManageAddresses.aspx">Company Address Book</a></li>
+                        <li class="rd-dropdown-item" user-role="Customer"><a class="rd-dropdown-link" href="/Store/Site/Admin/Assets/Personal/ManageAssets.aspx">Assets</a></li>
+                        <li class="rd-dropdown-item" user-role="Manager"><a class="rd-dropdown-link" href="/Store/Site/Admin/Assets/Company/ManageAssets.aspx">Company Assets</a></li>
+                        <li class="rd-dropdown-item" user-role="Manager, Producer"><a class="rd-dropdown-link" href="/Store/Site/Admin/Reports/Reports.aspx">Reports</a></li>
+                        <li class="rd-dropdown-item" user-role="Manager"><a class="rd-dropdown-link" href="/Store/Site/Admin/Data/SharedData.aspx">Manage Data</a></li>
+                    </ul>
+                    </li>
+					<li class="rd-nav-item"><a class="rd-nav-link" href="#">About Us</a>
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-shop.html">Grid Shop</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="shop-list.html">Shop List</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-product.html">Single Product</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cart-page.html">Cart Page</a></li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="checkout.html">Checkout</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="/Store/Site/Page.aspx?REF=WHO-WE-ARE">Who We Are</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="services.html">What We Offer</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="our-team.html">Our Team</a></li>
                       </ul>
                     </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/Store/Site/Page.aspx?REF=CONTACT-US">Contact Us</a>
+                    </li>
+					  <li class="rd-nav-item"><a class="rd-nav-link" href="/Store/Site/Page.aspx?REF=FAQ">FAQ</a>
+
                   </ul>
                 </div>
                 <div class="rd-navbar-main-element">
                   <!-- RD Navbar Search-->
                   <div class="rd-navbar-search rd-navbar-search-2">
-                    <button class="rd-navbar-search-toggle rd-navbar-fixed-element-3" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
-                    <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
-                      <div class="form-wrap">
+                    <button class="rd-navbar-search-toggle rd-navbar-fixed-element-3" onclick='SearchTerm("rd-navbar-search-form-input")'><span></span></button>
+                    <div class="form-wrap">
                         <label class="form-label" for="rd-navbar-search-form-input">Search...</label>
                         <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off"/>
                         <div class="rd-search-results-live" id="rd-search-results-live"></div>
-                        <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
                       </div>
-                    </form>
                   </div>
                   <!-- RD Navbar Basket-->
                   <div class="rd-navbar-basket-wrap">
@@ -128,22 +138,6 @@
                             </div>
                           </div>
                         </div>
-                        <div class="cart-inline-item">
-                          <div class="unit unit-spacing-sm align-items-center">
-                            <div class="unit-left"><a class="cart-inline-figure" href="single-product.html"><img src="images/product-mini-7-100x90.png" alt="" width="100" height="90"/></a></div>
-                            <div class="unit-body">
-                              <h6 class="cart-inline-name"><a href="single-product.html">PENDANT LAMP</a></h6>
-                              <div>
-                                <div class="group-xs group-middle">
-                                  <div class="table-cart-stepper">
-                                    <input class="form-input" type="number" data-zeros="true" value="1" min="1" max="1000"/>
-                                  </div>
-                                  <h6 class="cart-inline-title">$17.00</h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                       </div>
                       <div class="cart-inline-footer">
                         <div class="group-sm"><a class="button button-default-outline-2 button-zakaria" href="cart-page.html">Go to cart</a><a class="button button-primary button-zakaria" href="checkout.html">Checkout</a></div>
@@ -155,17 +149,21 @@
                 <div class="rd-navbar-project">
                   <div class="rd-navbar-project-header">
                     <button class="rd-navbar-project-hamburger rd-navbar-project-hamburger-close" type="button" data-multitoggle=".rd-navbar-main" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate><span class="project-close"><span></span><span></span></span></button>
-                    <h5 class="rd-navbar-project-title">Our Contacts</h5>
+                    <h5 class="rd-navbar-project-title">Hello {User_Username}</h5>
                   </div>
                   <div class="rd-navbar-project-content">
                     <div>
                       <div>
                         <!-- Owl Carousel-->
-                        <div class="owl-carousel" data-items="1" data-dots="true" data-autoplay="true"><img src="images/about-5-350x269.jpg" alt="" width="350" height="269"/><img src="images/about-6-350x269.jpg" alt="" width="350" height="269"/><img src="images/about-7-350x269.jpg" alt="" width="350" height="269"/>
-                        </div>
+                        <!--div class="owl-carousel" data-items="1" data-dots="true" data-autoplay="true">
+                        </div-->
                         <ul class="contacts-modern">
-                          <li><a href="#">523 Sylvan Ave, 5th Floor<br>Mountain View, CA 94041 USA</a></li>
-                          <li><a href="tel:#">+1 (844) 123 456 78</a></li>
+                          <li><a href="#">
+                              {Nav_MyAccount:fa fa-user}
+                              {Nav_SignIn:fa fa-sign-in}
+                              {Nav_Backend:fa fa-gears text-primary}
+                              {Nav_LogOut:fa fa-sign-out}
+                              </a></li>
                         </ul>
                       </div>
                       <div>
@@ -184,6 +182,7 @@
           </nav>
         </div>
       </header>
+      
 <div class="container">
 {Body}
 	</div>
@@ -195,11 +194,11 @@
             <div class="row row-40 row-md-50 justify-content-xl-between">
               <div class="col-sm-6 col-lg-4 col-xl-3 wow fadeInRight">
                 <div class="footer-classic-brand">
-                  <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-210x88.png" alt="" width="105" height="44"/><img class="brand-logo-light" src="images/logo-inverse-212x88.png" alt="" width="106" height="44"/></a>
+                  <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-210x88.png" alt="" width="105" height="44"/><img class="brand-logo-light" src="images/logo-default-210x88.png" alt="" width="106" height="44"/></a>
                 </div>
                 <ul class="list-schedule">
-                  <li><span>Weekdays:</span><span>08:00am - 08:00pm</span></li>
-                  <li><span>Weekends:</span><span>10:00am - 06:00pm</span></li>
+                  <li><span>Weekdays:</span><span>8:30am - 4:30pm</span></li>
+                  <li><span>Weekends:</span><span>CLOSED</span></li>
                 </ul>
                 <div class="footer-classic-social">
                   <div class="group-lg group-middle">
@@ -209,7 +208,6 @@
                         <li><a class="icon mdi mdi-facebook" href="#"></a></li>
                         <li><a class="icon mdi mdi-twitter" href="#"></a></li>
                         <li><a class="icon mdi mdi-instagram" href="#"></a></li>
-                        <li><a class="icon mdi mdi-google-plus" href="#"></a></li>
                       </ul>
                     </div>
                   </div>
@@ -221,19 +219,19 @@
                   <li>
                     <div class="unit unit-spacing-sm flex-column flex-md-row">
                       <div class="unit-left"><span class="icon mdi mdi-map-marker"></span></div>
-                      <div class="unit-body"><a href="#">523 Sylvan Ave, 5th Floor<br/>Mountain View, CA 94041 USA</a></div>
+                      <div class="unit-body"><a href="#">398 Brébeuf Street<br/>Gatineau, Québec Canada <br> J8P 5J3</a></div>
                     </div>
                   </li>
                   <li>
                     <div class="unit unit-spacing-sm flex-column flex-md-row">
                       <div class="unit-left"><span class="icon mdi mdi-phone"></span></div>
-                      <div class="unit-body"><a href="tel:#">+1 (844) 123 456 78</a></div>
+                      <div class="unit-body"><a href="tel:#">+1 (819) 669-7722</a></div>
                     </div>
                   </li>
                   <li>
                     <div class="unit unit-spacing-sm flex-column flex-md-row">
                       <div class="unit-left"><span class="icon mdi mdi-email-outline"></span></div>
-                      <div class="unit-body"><a href="mailto:#">info@demolink.org</a></div>
+                      <div class="unit-body"><a href="mailto:#">info@mbmpromotion.com</a></div>
                     </div>
                   </li>
                 </ul>
@@ -259,11 +257,11 @@
           <div class="container">
             <div class="row row-10 align-items-center justify-content-sm-between">
               <div class="col-md-auto">
-                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Sofa</span><span>.&nbsp; All rights reserved</span>. Design&nbsp;by&nbsp;<a href="https://zemez.io/">Zemez</a></p>
+                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>MBM Promotion</span><span>.&nbsp; All rights reserved</span>.</p>
               </div>
               <div class="col-md-auto order-md-1"><a href="privacy-policy.html">Privacy Policy</a></div>
               <div class="col-md-auto">
-                <div class="group-sm group-middle"><img src="images/payment-1-45x15.png" alt="" width="45" height="15"/><img src="images/payment-2-46x28.png" alt="" width="46" height="28"/><img src="images/payment-3-62x17.png" alt="" width="62" height="17"/>
+                <div class="group-sm group-middle"><img src="images/payment-1-45x15.png" alt="" width="45" height="15"/><img src="images/payment-2-46x28.png" alt="" width="46" height="28"/><img src="images/payment-4-62x25.png" alt="" width="62" height="25"/>
                 </div>
               </div>
             </div>
